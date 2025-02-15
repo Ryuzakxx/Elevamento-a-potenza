@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Funnel+Display:wght@300..800&family=Geist:wght@100..900&family=Numans&display=swap');
+
+
+
+/* Base styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Ensure the body covers full width */
+    height: 100%; /* Ensure the body covers full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(132deg, rgba(58,103,180,1) 0%, rgba(238,69,252,1) 100%);
+    background-size: cover; /* Cover the entire size of the window */
+    font-family: 'Funnel Display';
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: transparent; /* Slight transparency */
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 80%; /* Responsive width */
+    max-width: 600px; /* Maximum width */
+    background: rgba(24, 24, 24, 0.55);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: white;
+}
+
+.input-group {
+    margin: 15px 0;
+}
+
+input[type="number"], input[type="text"] {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #e100ff;
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
+    color: #e100ff;
+    font-family: 'Funnel Display';
+    font-weight: 400;
+}
+
+button {
+    background-color: #e100ff;
+    color: white;
+    border: 2px solid;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%; 
+    font-family: 'Funnel Display';
+    border-color: #e100ff;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: rgb(63, 133, 255);
+    color: white;
+    border-color: rgb(63, 133, 255);
+    font-family: 'Funnel Display';
+}
+
+.label {
+    display: block; /* Ensure the label is on a new line */
+    font-size: 16px;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* More responsive on smaller screens */
+    }
+}

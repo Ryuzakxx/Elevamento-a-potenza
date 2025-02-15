@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevamento a potenza</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Elevamento a potenza avendo base ed esponente</h1>
+        <div class="input-group">
+            <label for="base">Inserisci la base:</label>
+            <input type="number" id="base" name="base">
+        </div>
+        <div class="input-group">
+            <label for="esponente">Inserisci l'esponente:</label>
+            <input type="number" id="esponente" name="esponente">
+        </div>
+        <button onclick="calcolaPotenza()">Calcola</button>
+        <div class="input-group">
+            <label for="risultato">Risultato:</label>
+            <input type="text" id="risultato" name="risultato" readonly>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
